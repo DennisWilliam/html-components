@@ -1,0 +1,93 @@
+.btn {
+  position: relative;
+  padding: 20px 40px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
+  border: 2px solid transparent;
+  transition: 0.5s;
+  font-family: "Roboto", sans-serif;
+  color: #3498db;
+  letter-spacing: 0.2em;
+}
+
+.btn:hover {
+  border: 2px solid #3498db;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0 8px;
+  border-left: 2px solid #3498db;
+  border-right: 2px solid #3498db;
+  transition: 1s;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 8px 0;
+  border-top: 2px solid #3498db;
+  border-bottom: 2px solid #3498db;
+  transition: 1s;
+}
+
+#btn1:hover::before {
+  inset: 16px 8px;
+}
+
+#btn1:hover::after {
+  inset: 8px 16px;
+}
+
+#btn2:hover::before {
+  inset: 0px 8px;
+  transform: rotateY(180deg);
+}
+
+#btn2:hover::after {
+  inset: 8px 0px;
+  transform: rotateX(180deg);
+}
+
+#btn3:hover::before {
+  inset: 0px -12px;
+  transform: skewY(15deg);
+}
+
+#btn3:hover::after {
+  inset: -12px 0px;
+  transform: skewX(15deg);
+}
+
+#btn4:hover,
+#btn5:hover,
+#btn6:hover {
+  border-color: transparent;
+}
+
+#btn4:hover::before {
+  inset: 0 30px;
+  transform: skewX(25deg);
+}
+
+#btn4:hover::after {
+  inset: 10px 0px;
+  transform: skewX(25deg);
+}
+
+#btn5:hover::after,
+#btn5:hover::before {
+  inset: 0px;
+}
+
+#btn6:hover::before {
+  inset: 0 0;
+  transform: rotate(-10deg);
+}
+
+#btn6:hover::after {
+  inset: 0 -4px;
+  transform: rotate(5deg);
+}
