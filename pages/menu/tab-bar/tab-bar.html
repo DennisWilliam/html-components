@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Base HTML</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./tab-bar.css" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-card">
+      <div class="tab">
+        <div class="circular1"></div>
+        <div class="circular2"></div>
+        <div class="circular">
+          <ul class="circle">
+            <li><ion-icon name="add"></ion-icon></li>
+            <li><ion-icon name="add"></ion-icon></li>
+            <li><ion-icon name="add"></ion-icon></li>
+          </ul>
+        </div>
+        <div class="menu-toggle">
+          <ion-icon name="add"></ion-icon>
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="#"><ion-icon name="home"></ion-icon> </a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="person"></ion-icon> </a>
+          </li>
+          <li></li>
+          <li>
+            <a href="#"><ion-icon name="chatbubble"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="settings"></ion-icon></a>
+          </li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <script src="./tab-bar.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      let menuToggle = document.querySelector(".menu-toggle");
+      let tab = document.querySelector(".tab");
+      menuToggle.onclick = function () {
+        tab.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
