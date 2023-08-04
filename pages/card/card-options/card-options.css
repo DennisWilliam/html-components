@@ -1,0 +1,86 @@
+:root {
+  --blue: #2196f3;
+  --bg: #eaeded;
+  --white: #fff;
+  --btn: #ff4383;
+}
+
+.card {
+  position: relative;
+  transition: 0.5s;
+  width: 100px;
+  font-family: "Roboto", sans-serif;
+}
+
+.user {
+  background-color: var(--blue);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: var(--white);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.user h2 {
+  margin: 0;
+}
+
+.card .user ion-icon {
+  top: 0;
+  transform: translateY(-50%);
+  background-color: #fff;
+  transition: 0.5s;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 10;
+  color: var(--blue);
+  font-size: 2em;
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 150px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.toggle {
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  padding: 5px 15px;
+  background-color: var(--btn);
+  border-radius: 30px;
+  transform: translateY(50%);
+  border: 6px solid var(--bg);
+  text-align: center;
+  transition: height 0.5s;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.toggle::before {
+  content: "Open";
+}
+.card.active .toggle::before {
+  content: "Close";
+}
+.card.active {
+  transition: height 0.5s;
+  height: 550px;
+}

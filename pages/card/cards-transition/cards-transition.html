@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Base HTML</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./cards-transition.css" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-card">
+      <div class="cards">
+        <input id="card1" type="radio" name="slider" checked />
+        <input id="card2" type="radio" name="slider" />
+        <input id="card3" type="radio" name="slider" />
+        <div class="buttons">
+          <label for="card1"></label>
+          <label for="card2"></label>
+          <label for="card3"></label>
+        </div>
+        <div class="contents">
+          <div class="box card1">teste</div>
+          <div class="box card2"></div>
+          <div class="box card3"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./cards-transition.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

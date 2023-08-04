@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Base HTML</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./buttom-bar.css" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-card">
+      <div class="navigation">
+        <div class="buttom-toggle">
+          <i></i>
+          <ion-icon name="add"></ion-icon>
+        </div>
+        <div class="menu">
+          <ul >
+          <li>
+            <a href="#"><ion-icon name="home"></ion-icon> </a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="person"></ion-icon> </a>
+          </li>
+          <li></li>
+          <li>
+            <a href="#"><ion-icon name="chatbubble"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="settings"></ion-icon></a>
+          </li>
+        </div>
+      </div>
+    </div>
+    <script src="./buttom-bar.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      let buttomToggle = document.querySelector(".buttom-toggle");
+      let menu = document.querySelector(".menu");
+      buttomToggle.onclick = function () {
+        buttomToggle.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
